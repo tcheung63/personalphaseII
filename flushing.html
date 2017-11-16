@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<!-- with bootstrap; jQuery; Axios AJAX -->
+
+ <!--Dragon and Tiger Image-->
+    <!--<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@cadop?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Mathew Schwartz"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Mathew Schwartz</span></a>-->
+<!--Jumbotron Image-->
+<!--<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@cjoudrey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Christian Joudrey"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Christian Joudrey</span></a>-->
+
+<html lang="en">
+  <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
+<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+  </head>
+  <body>
+<!--navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+        <a class="navbar-brand" href="index.html"><img src="image/dragon_tiger.jpg" class="icon" alt="no image"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="about.html">About</a>
+          
+            <a class="nav-item nav-link dropdown-toggle" href="chinatown.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Places to Eat</a>
+              <div class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item text-light" href="chinatown.html">Chinatown</a>
+                <a class="dropdown-item text-light" href="brooklyn.html">Brooklyn</a>
+                <a class="dropdown-item text-light" href="flushing.html">Flushing</a>
+              </div>
+            <a class="nav-item nav-link" href="comment.html">Comment</a>
+          </div>
+        </div>
+    </nav>
+<!--End of Navigation bar-->
+<!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid text-center oriental">
+        <div class="container-fluid">
+          <h1 class="display-3">Chinese Eateries NYC</h1>
+          <p class="lead">Local Authentic Chinese Food. Come try!!</p>
+        </div>
+    </div>
+<!--end of Jumbotron-->
+<!--Main container-->
+      <div class="container">
+<!--Flushing info-->
+          <div class id="flushing">
+               <div class="row mt-3 mb-3">
+                    <div class="col header-border border border-top-0 border-left-0 border-right-0">
+                        <h2 class="text-center">Flushing, Main St. - Asian Fushion</h2>
+                    </div>
+               </div>
+               <div class="row justify-content-center food">
+                    <div class="card box col-10 col-md-5 col-xl-3 mb-3 text-center">
+                        <img src="image/guilin.jpg" class="card-img-center mt-3" alt="No Image - Flushing">
+                    <div class="card-body">
+                        <p class="card-text index_links">Vermicelli</p>
+                    </div>
+                    </div>
+                    <div class="card box col-10 col-md-5 col-xl-3 mb-3 text-center">
+                        <img src="image/fishroastedchili.jpg" class="card-img-top mt-3" alt="No Image - Flushing">
+                    <div class="card-body">
+                        <p class="card-text index_links">Fish</p>
+                    </div>
+                    </div>
+                    <div class="card box col-10 col-md-5 col-xl-3 mb-3 text-center">
+                        <img src="image/taiwansteak.jpg" class="card-img-top-center mt-3" alt="No Image - Flushing">
+                    <div class="card-body">
+                        <p class="card-text index_links">Steak</p></p></a>
+                    </div>
+               </div>
+<!--table-->
+    <div class="container tableTable">
+        <table class="table table-responsive d-table">
+<!--table header-->
+          <thead>
+              <tr>
+                <th scope="col-4">Location</th>
+                <th scope="col-4">Eats</th>
+                <th scope="col-1">More Info</th>
+              </tr>
+          </thead>
+          <tbody class id="foodInfo2">
+              <tr>
+<!--location-->
+  	            <td class="locationData">
+    	              <p>J Mart Food Court</p>
+    	              <p>New York Food Court</p>
+    	              <p>Arcadia Mall Food Court</p>
+  	            </td>
+                <td class="eatItem">
+                    <p>Guilin Vermicelli (Northeast China)</p>
+                    <p>Fish Veggie Roasted Chili (Southwest China)</p>
+                    <p>Taiwanese Style Steak</p>
+                </td>
+<!-- Button trigger modal -->
+                <td>
+                    <button class="btn btn-warning chinatown" onclick="seen2()" data-toggle="modal" data-target="#exampleModal">
+                        More Info
+                    </button>
+<!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <!--modal content-->
+                             <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Asian Fushion</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="ingredient header-border border border-top-0 border-left-0 border-right-0"><h3>
+                                    Guilin Vermicelli
+                                  </h3>
+                                  </div>
+                                  <div class="list">
+                                    <p class="underlined">Ingredients:</p>
+                                      <ul>
+                                        <li>Vermicelli</li>
+                                        <li>Peanuts</li>
+                                        <li>Beef</li>
+                                        <li>Beef Tripes</li>
+                                        <li>String Beans</li>
+                                        <li>Cilantro</li>
+                                      </ul>
+                                     </div>
+                                   <p class="underlined">Other Popular Guilin Gourmet:</p> 
+                                  <div class="list">
+                                        <ul>
+                                          <li>Liuzhou Snails Rice Noodle</li>
+                                          <li>Vermicelli Soup in Nannin Style</li>
+                                          <li>Brisket Vermicelli</li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                  <div class="modal-body">
+                                  <div class="ingredient header-border border border-top-0 border-left-0 border-right-0"><h3>
+                                    Fish with Veggie and Roasted Chili
+                                  </h3>
+                                  </div>
+                                  <p class="underlined">Other Popular SiChuan Gourmet (caution: everything is spicy):</p> 
+                                  <div class="list">
+                                        <ul>
+                                          <li>Crispy Crabs with Dried Red Pepper</li>
+                                          <li>Boiled Sliced Fish in Hot Chili Sauce</li>
+                                          <li>Sauteed Lamb with Hot Pepper Sauce</li>
+                                        </ul>
+                                 </div>
+                               </div>
+                               <div class="modal-body">
+                                  <div class="ingredient header-border border border-top-0 border-left-0 border-right-0"><h3>
+                                    Taiwanese Style Steak
+                                  </h3>
+                                  </div>
+                                  <div class="list">
+                                   <p class="underlined">Ingredients:</p>
+                                      <ul>
+                                        <li>Steak</li>
+                                        <li>Sunny-side up egg</li>
+                                        <li>Lettuce and Tomato</li>
+                                        <li>Corn</li>
+                                        <li>Onions</li>
+                                        <li>Gravy</li>
+                                        <li>Pepper</li>
+                                     </ul>
+                                  </div>
+                                  <p class="underlined">Other Popular Taiwanese Gourmet:</p> 
+                                  <div class="list">
+                                        <ul>
+                                          <li>Salt and Pepper Chicken</li>
+                                          <li>Tainan Noodle with Shrimp and Egg</li>
+                                          <li>Pork Chop on Rice</li>
+                                        </ul>
+                                    </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-danger" onclick="closebtn()" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </td>
+             </tr>
+          </tbody>
+      </table>
+  </div> <!--closing container-->
+  <!--Recommendation Section-->
+  <div class="container">
+         <div class="row mt-3 mb-3">
+            <div class="col header-border border border-top-0 border-left-0 border-right-0">
+                <h2 class="text-center">Other Recommendations!!</h2>
+            </div>
+         </div>
+         <div class="container text-center">
+            <div class="row justify-content-around">
+                <div class="card box col-10 col-md-5 col-xl-3 mb-3 text-center">
+                      <a href="chinatown.html"><img src="image/chinatown.jpg" class="card-img-top mt-3" alt="No image - Chinatown">
+                <div class="card-body">
+                      <p class="card-text index_links">Chinatown</p></a>
+                </div>
+                </div>
+                <div class="card box col-10 col-md-5 col-xl-3 mb-3 text-center">
+                      <a href="brooklyn.html"><img src="image/brooklyn.jpg" class="card-img-top mt-3" alt="No image - Brooklyn">
+                <div class="card-body">
+                      <p class="card-text index_links">Brooklyn</p></a>
+                </div>
+                </div>
+                </div>
+            </div>
+          
+          <div class="returntop text-right"><a href="#flushing">Return to Top</a></div>
+     </div>
+     </div>
+ 
+ <!--Footer-->
+  <div class="col header-border border border-top-0 border-left-0 border-right-0"></div>
+    <div class="footer text-center mt-5">
+      <h4>Chinese Eateries NYC</h4>
+      <p>183 Centre St., 2nd Floor<br>
+      New York, NY 10001</p>
+      <p>+212-123-4567</p>
+    </div>
+</div>
+    
+    
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script>
+       function seen2(){
+        $("#foodInfo2").addClass('black');
+       }
+        
+        function closebtn(){
+            $('#foodInfo2').removeClass('black');
+        }
+
+    </script>
+    
+  </body>
+</html>

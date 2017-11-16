@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- with bootstrap; jQuery; Axios AJAX -->
+
+<!--Dragon and Tiger Image-->
+    <!--<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@cadop?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Mathew Schwartz"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Mathew Schwartz</span></a>-->
+<!--Jumbotron Image-->
+<!--<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@cjoudrey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Christian Joudrey"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Christian Joudrey</span></a>-->
+
+<html lang="en">
+  <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
+<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+  </head>
+  <body>
+<!--navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+        <a class="navbar-brand" href="index.html"><img src="image/dragon_tiger.jpg" class="icon" alt="no image"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="about.html">About</a>
+          
+            <a class="nav-item nav-link dropdown-toggle" href="chinatown.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Places to Eat</a>
+              <div class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item text-light" href="chinatown.html">Chinatown</a>
+                <a class="dropdown-item text-light" href="brooklyn.html">Brooklyn</a>
+                <a class="dropdown-item text-light" href="flushing.html">Flushing</a>
+              </div>
+            <a class="nav-item nav-link" href="comment.html">Comment</a>
+          </div>
+      </div>
+    </nav>
+<!--End of Navigation bar-->
+<!--jumbrotron-->
+    <div class="jumbotron jumbotron-fluid text-center oriental">
+      <div class="container-fluid">
+          <h1 class="display-3">Chinese Eateries NYC</h1>
+          <p class="lead">Local Authentic Chinese Food. Come try!!</p>
+      </div>
+    </div>
+<!--End of jumbrotron-->
+<!--About Chinese Eateries NYC discription-->
+   <div class="container info">
+      <p>Chinese Eateries NYC is dedicated to assist local and tourists to find authentic Chinese restaurants and shops to eat Chinese food. We are located in 183 Centre St. which is the start point of Chinatown. </p>
+
+      <p>Our main focus centers on the 3 Chinatown: Chinatown, Manhattan, 8th Avenue in Brooklyn and Flushing, Main St, Queens. What makes the 3 Chinatown food unique depends on the type of Chinese people who live in the area.</p>  
+      
+      <p>In Chinatown, majority of the Chinese people are from Guangdong Province (southeast China) and Hong Kong the preparation of the food is Cantonese Style. Cantonese Style food are Congee (rice porridge + other ingredients), Noodles (steamed, soup based or stir-fried), and dim sum, with different type of seasoning.
+      </p>
+      
+      <p>In 8th Avenue, majority of the Chinese people are from Fujian Province (southeast China) closer to water. Many fujianese dishes are seafood. Fujianese food are milder with mixed of sweet and sour taste.
+      </p>
+      
+      <p>In Flushing, there are different types of Chinese people. Northern Chinese and Taiwanese food are generally more saltier and Southwest Chinese food are spicier. Within the 5 block radius of Main St., you can eat all types of Chinese food making Flushing, Main St. the most popular location to eat Chinese food. 
+      </p> 
+      
+      <p>The restaurants, street locations and food listed on our site highlights some of the locations and food local Chinese people typically eat.
+      </p>
+   </div>
+<!--End of About Chinese Eateries NYC description-->
+
+<!--Map-->
+   <div class="map">
+       <div class="row justify-content-center">
+          <div class="embed-responsive embed-responsive-1by1" style="width:300px;height:300px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.983789860383!2d-74.00208368517602!3d40.718373345163585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25989e4ccba67%3A0xd73f26caae3f3895!2s183+Centre+St%2C+New+York%2C+NY+10013!5e0!3m2!1sen!2sus!4v1509750029393" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+     </div>
+   </div>
+<!--End of Map-->
+<!--Footer-->
+   
+   <div class="footer text-center mt-5">
+      <h4>Chinese Eateries NYC</h4>
+      <p>1234 Times Square<br>
+      New York, NY 10001</p>
+      <p>+212-123-4567</p>
+  </div>
+    
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

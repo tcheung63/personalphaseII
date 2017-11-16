@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!-- with bootstrap; jQuery; Axios AJAX -->
+
+ <!--Dragon and Tiger Image-->
+    <!--<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@cadop?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Mathew Schwartz"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Mathew Schwartz</span></a>-->
+<!--Jumbotron Image-->
+<!--<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@cjoudrey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Christian Joudrey"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Christian Joudrey</span></a>-->
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    
+<!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+  </head>
+  <body>
+<!--navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+      <a class="navbar-brand" href="index.html"><img src="image/dragon_tiger.jpg" class="icon" alt="no image"></img></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="about.html">About</a>
+          
+          <a class="nav-item nav-link dropdown-toggle" href="chinatown.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Places to Eat</a>
+            <div class="dropdown-menu bg-danger" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item text-light" href="chinatown.html">Chinatown</a>
+              <a class="dropdown-item text-light" href="flushing.html">Flushing</a>
+              <a class="dropdown-item text-light" href="brooklyn.html">Brooklyn</a>
+            </div>
+          <a class="nav-item nav-link" href="comment.html">Comment</a>
+          
+        </div>
+      </div>
+    </nav>
+     <div class="jumbotron jumbotron-fluid text-center oriental">
+        <div class="container-fluid">
+          <h1 class="display-3">Chinese Eateries NYC</h1>
+          <p class="lead">Local Authentic Chinese Food. Come try!!</p>
+        </div>
+      </div>
+      <div class="container">
+      <div class="col header-border border border-top-0 border-left-0 border-right-0">
+    <h2 class="text-center">Recommendation and Comments</h2>
+    </div>
+    </div>
+<!--Form-->
+<div class="container">
+   <form class="cmxform" id="commentForm" method="get" action="">
+     <div class="row">
+       <div class="col-md-6 mb-3">
+          <label for="firstName">First Name (required, at least 2 characters)</label>
+          <input id="firstName" class="form-control" minlength="2" type="text" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="firstName">Last Name (required, at least 2 characters)</label>
+        <input id="firstName" class="form-control" minlength="2" type="text" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <label for="cemail">E-Mail (required)</label>
+        <input id="cemail" class="form-control" type="email" name="email" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <p>If you have any comments please feel free to leave a message.</p>
+      <textarea id="ccomment" class="form-control" rows="8" name="comment"></textarea>
+    </div>
+    </div>
+     <div class="container md-6 mb-5 button">
+       <!-- Button trigger modal -->
+        <button type="button" class="btn btn-warning btn-lg active" data-toggle="modal" data-target="#exampleModal">
+          Submit
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Thank you for coming. Please return soon!! You are returning to our home page.
+              </div>
+              <div class="modal-footer">
+                <a href="index.html" class="btn btn-danger active" role="button" aria-pressed="true">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+         </div>
+         </form>
+         </div>
+         </div>
+          
+<!--Footer-->
+  <div class="col header-border border border-top-0 border-left-0 border-right-0"></div>
+    <div class="footer text-center mt-5">
+      <h4>Chinese Eateries NYC</h4>
+      <p>183 Centre St., 2nd Floor<br>
+      New York, NY 10001</p>
+      <p>+212-123-4567</p>
+    </div>
+  </div>
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+   $("#commentForm").validate();
+    
+  
+    </script>
+    
+    
+    
+    
+    
+    
+  </body>
+</html>
